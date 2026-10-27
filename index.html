@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Livros</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/post.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de livros</h1>
+        <small>Preencha os dados abaixo!!!</small>
+    </header>
+    <main>
+        <section>
+            <h2>Novo livro</h2>
+            <form id="form-livro">
+
+                <label for="title">Nome do Livro :</label>
+                <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                <label for="autor">Autor do livre :</label>
+                <input id="autor" name="autor" type="text" required />
+
+                <label for="genero">Gênero principal do livro :</label>
+                <input id="genero" name="genero" type="text" required />
+
+                <label for="ano_publicacao">Ano de publicação:</label>
+                <input id="ano_publicacao" name="ano_publicacao" type="number" required />
+
+                <label for="numero_paginas">Quantidade de páginas :</label>
+                <input id="numero_paginas" name="numero_paginas" type="number" required />
+
+                <label for="imageUrl">URL da imagem (opcional):</label>
+                <input id="imageUrl" name="imageUrl" type="url" />
+
+                <button type="submit">Cadastrar livro</button>
+
+            </form>
+            <p id="resposta"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Prática de formulários HTML.</p>
+    </footer>
+</body>
+
+</html>
